@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f7ec">
+  <meta name="description" content="放課後喫茶部の手づくりドリンクとおやつ。今日のおすすめをどうぞ。">
+  <title>放課後喫茶部 | おやつメニュー</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="data/products.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <div class="announcement">
+    <span class="announcement__dot" aria-hidden="true"></span>
+    <p>本日の部室カフェ、オープン中！ <span>｜</span> 売り切れのときはごめんなさい</p>
+    <span class="announcement__hours">OPEN 15:30 - 17:30</span>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="放課後喫茶部 トップ">
+      <span class="brand__stamp" aria-hidden="true">放</span>
+      <span class="brand__name">放課後<span>喫茶部</span></span>
+    </a>
+    <nav class="site-nav" aria-label="メインナビゲーション">
+      <a href="#menu">おしながき</a>
+      <a href="#about">わたしたち</a>
+    </nav>
+    <button class="tray-button" type="button" aria-label="おやつトレイ、0点">
+      <span class="tray-button__icon" aria-hidden="true">＋</span>
+      <span class="tray-button__label">おやつトレイ</span>
+      <span class="tray-button__count" aria-hidden="true">0</span>
+    </button>
+  </header>
+
+  <main id="top">
+    <section class="welcome" aria-labelledby="welcome-title">
+      <div class="welcome__copy">
+        <p class="eyebrow"><span>OUR LITTLE CLUB CAFE</span><i aria-hidden="true"></i> since 2024</p>
+        <h1 id="welcome-title">部活のあとに、<br><span>ひと息</span>どうぞ。</h1>
+        <p class="welcome__text">家庭科室のすみっこから、こんにちは。<br>手づくりのおやつとドリンクを用意して待ってます。</p>
+        <a class="menu-link" href="#menu">今日のおしながきを見る <span aria-hidden="true">↓</span></a>
+        <span class="welcome__scribble" aria-hidden="true">made with<br>our hands!</span>
+      </div>
+      <div class="welcome__visual">
+        <div class="welcome__photo-wrap">
+          <img class="welcome__photo" src="images/scone.jpg" alt="焼きたてのクロワッサン">
+          <span class="photo-sticker">きょうの<br>おすすめ！</span>
+        </div>
+        <span class="welcome__caption">放課後の小さなごほうび</span>
+      </div>
+    </section>
+
+    <section class="menu-section" id="menu" aria-labelledby="menu-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow"><span>AFTER SCHOOL MENU</span></p>
+          <h2 id="menu-title">今日のおしながき<span>!</span></h2>
+        </div>
+        <p class="section-heading__note">ぜんぶ部員の手づくりです</p>
+      </div>
+
+      <div class="menu-controls">
+        <div class="filter-tabs" role="group" aria-label="商品カテゴリ">
+          <button class="filter-tab is-active" type="button" data-filter="all" aria-pressed="true">ぜんぶ <span>06</span></button>
+          <button class="filter-tab" type="button" data-filter="drink" aria-pressed="false">ドリンク <span>03</span></button>
+          <button class="filter-tab" type="button" data-filter="snack" aria-pressed="false">おやつ <span>03</span></button>
+        </div>
+        <p class="menu-controls__season"><span aria-hidden="true">✳</span> きょうもできたて</p>
+      </div>
+
+      <div class="product-grid" id="product-grid" aria-live="polite"></div>
+    </section>
+
+    <section class="club-note" id="about" aria-label="放課後喫茶部について">
+      <span class="club-note__mark" aria-hidden="true">!</span>
+      <p><strong>放課後喫茶部って？</strong> おいしいもの好きの高校生が集まって、週に一度だけ開く小さなカフェです。</p>
+      <span class="club-note__sign">また来てね！</span>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand brand--footer" href="#top"><span class="brand__stamp" aria-hidden="true">放</span><span class="brand__name">放課後<span>喫茶部</span></span></a>
+    <p>今日のおやつが、いい一日のつづきになりますように。</p>
+    <small>© 2026 放課後喫茶部</small>
+  </footer>
+
+  <p class="toast" role="status" aria-live="polite"></p>
+</body>
+</html>
